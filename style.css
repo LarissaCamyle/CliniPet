@@ -137,10 +137,26 @@ a {
     color: rgba(5, 54, 40, 0.911);
 }
 
+.conteudo-principal-animacao{
+    height: 400px;
+    animation: left 2s linear 1;
+}
+
 .conteudo-principal-imagem {
     height: 95%; 
     border-radius: 7em; 
     box-shadow: 4px 5px 4px rgba(255, 255, 255, 0.11);
+    
+}
+
+@keyframes left {
+    0%{
+        margin-left: 50px;
+        opacity: 80%;
+    }
+    50%{
+        margin-left: 0px;
+    }
 }
 
 .conteudo-principal-botao{
