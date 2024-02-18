@@ -566,7 +566,7 @@ a {
 }
 
     /*CELULAR **********************************/
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
             .conteudo-servicos{
                 flex-direction: column;
             }
