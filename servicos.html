@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
 	<link rel="stylesheet" type="text/css" href="servicos.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +21,31 @@
 			</div>
 		</header>
 
+
 		<div class="conteudo">
-            <img class="logo-imagem" src="logo.png" style="height: 400px; width: 400px;"><!--icon da pagina-->
+			<div class="conteudo-logo">
+				<img class="conteudo-logo-imagem" src="logo.png" >
+				<div class="conteudo-logo-texto">Entre em Contato!</div>
+				<hr class="conteudo-logo-hr">
+			</div>
 
-            
-        </div>
-
-		<footer class="rodape">
-			<img class="logo-imagem" src="logo.png" style="height: 40px; width: 40px;"><!--icon da pagina-->
-		</footer>
+			<div class="conteudo-contato">
+				<div class="contact-form" action="https://formsubmit.co/larissacamyle4@gmail.com" method="POST">
+					<div class="conteudo-contato-email">
+						<label class="conteudo-contato-texto" for="email">E-mail:</label>
+						<input type="email" name="email" required>
+					</div>
+					<div class="conteudo-contato-mensagem">
+						<label class="conteudo-contato-texto" for="message">Mensagem: </label>
+						<input class="input-mensagem" type="text" id="message" name="message" required>
+					</div>
+					<button type="submit">Send</button>
+                	<input type="hidden" name="_next" value="https://adrianasaty.github.io/easy-portfolio/thanks.html">
+                	<input type="hidden" name="_subject" value="New submission!">
+				</div>
+			</div>
+		</div>
+			
 
 
 </body>
