@@ -122,6 +122,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 55%;
 }
 
 .conteudo-principal-titulo{
@@ -153,10 +154,11 @@ a {
 @keyframes left {
     0%{
         margin-left: 15%;
-        opacity: 80%;
+        opacity: 20%;
     }
-    50%{
+    100%{
         margin-left: 0%;
+        opacity: 100%;
     }
 }
 
@@ -173,7 +175,7 @@ a {
 }
 
 .conteudo-principal-botao:hover {
-    background-color: rgba(148, 246, 253, 0.829);
+    background-color: rgba(184, 250, 255, 0.829);
     color: rgb(2, 0, 29);
     width: 170px;
     height: 40px;
@@ -327,7 +329,7 @@ a {
 }
 
         /*  CELULAR***************/
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 600px){
             .conteudo-retangulo-back{
                 width: 100%;
             }
@@ -346,7 +348,7 @@ a {
             }
         }
         /*TABLET********************/
-        @media screen and (min-width: 500px) and (max-width: 750px){
+        @media screen and (min-width: 600px) and (max-width: 900px){
             .conteudo-retangulo-back{
                 width: 85%;
             }
@@ -366,7 +368,7 @@ a {
 
 
 
-/*  CONTEUDO RESTANTE -------------------------------------------*/
+/*  CONTEUDO 4 3  -------------------------------------------
 
 .conteudo-terceiro, .conteudo-quarto {
     display: flex;
@@ -407,8 +409,8 @@ a {
 
 }
 
-        /*CELULAR *****************************/
-        @media screen and (max-width: 600px) {
+        /*CELULAR *****************************
+        @media screen and (max-width: 800px) {
             .conteudo-terceiro, .conteudo-quarto {
                 height: 420px;
                 margin-top: 0px;
@@ -431,8 +433,8 @@ a {
             }
 
         }
-        /*TABLET********************/
-        @media screen and(min-width: 600px) and (max-width: 900px){
+        /*TABLET********************
+        @media screen and(min-width: 800px) and (max-width: 900px){
             .conteudo-terceiro, .conteudo-quarto {
                 height: 500px;
                 margin-top: 0px;
@@ -456,11 +458,33 @@ a {
         }
 
 
+*/
 
 
-/*  CONTEUDO HORARIOS E INF*/
+/*CAROUSEL -------------------------------------------------------------------*/
+
+.carousel{
+    width: 90%;
+    margin: 100px 5% 100px 5% ;
+    
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-texto{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+}
+
+
+/*  CONTEUDO HORARIOS E INF-----------------------------------------------*/
 
 .conteudo-servicos{
+    width: 90%;
+    margin-left: 5%;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -549,7 +573,7 @@ a {
 }
 
 .conteudo-servicos-agendar-whatsapp:hover{   
-    background-color: #00443d;
+    background-color: #00574e;
 }
 
 .conteudo-servicos-agendar-whatsapp-texto{
@@ -566,13 +590,15 @@ a {
 }
 
     /*CELULAR **********************************/
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
             .conteudo-servicos{
                 flex-direction: column;
+                width: 90%;
+                margin-left: 5%;
             }
             .conteudo-servicos-horarios{
                 height: 250px;
-                width: 90%;
+                width: 95%;
                 margin-bottom: 10px;
             }
             .conteudo-servicos-telefone{
@@ -603,6 +629,99 @@ a {
             }
         }
 
+        @media screen and (min-width: 501px) and (max-width: 750px){
+            .conteudo-servicos{
+                width: 70%;
+                margin-left: 15%;
+                flex-direction: column;
+
+            }
+            .conteudo-servicos-horarios{
+                height: 250px;
+                width: 95%;
+                margin-bottom: 10px;
+                justify-content: center;
+            }
+            .conteudo-servicos-telefone{
+                height: 170px;
+                width: 95%;
+                margin-left: 10px;
+                justify-content: center;
+             }
+             .conteudo-servicos-titulo {
+                font-size: 17px;
+                font-weight: 400;
+            }
+            .conteudo-servicos-texto{
+                font-size: 15px;
+            }
+            .conteudo-servicos-agendar{
+                height: 170px;
+                width: 95%;
+                margin-left: 10px;
+                justify-content: center;
+             }
+             .conteudo-servicos-agendar-whatsapp{
+                width: 200px;
+                padding: 2px;
+                margin-left: 0px;
+            }
+            .conteudo-servicos-agendar-whatsap-icon{
+                height: 80%;
+                padding-left: 5px;
+            }
+            .conteudo-servicos-agendar-whatsapp-texto{
+                font-size: 14px;
+                padding-left: 8px;
+            }
+        }
+
+
+        @media screen and (min-width: 750px) and (max-width: 1000px){
+
+                .conteudo-servicos{
+                    width: 90%;
+                    margin-left: 5%;
+                    align-items: center;
+                }
+                .conteudo-servicos-horarios{
+                    height: 250px;
+                    width: 95%;
+                    margin-bottom: 10px;
+                }
+                .conteudo-servicos-telefone{
+                    height: 170px;
+                    width: 95%;
+                    margin-left: 10px;
+                 }
+                 .conteudo-servicos-titulo {
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+                .conteudo-servicos-texto{
+                    font-size: 15px;
+                }
+                .conteudo-servicos-agendar{
+                    height: 170px;
+                    width: 95%;
+                    margin-left: 10px;
+                 }
+                 .conteudo-servicos-agendar-whatsapp{
+                    width: 200px;
+                    padding: 2px;
+                    margin-left: 0px;
+                }
+                .conteudo-servicos-agendar-whatsap-icon{
+                    height: 80%;
+                    padding-left: 5px;
+                }
+                .conteudo-servicos-agendar-whatsapp-texto{
+                    font-size: 14px;
+                    padding-left: 8px;
+                }
+            }
+
+        
     
 
 /*  RODAPE --------------------------*/
