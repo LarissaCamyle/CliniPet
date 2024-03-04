@@ -51,7 +51,7 @@ texto3.addEventListener ("mouseout", function()
 /*FUNCOES ---------------------------------------------*/
 
 function aparecerBorda() {
-	borda.style.backgroundColor= 'rgb(182, 255, 246)';
+	borda.style.backgroundColor= 'rgb(202, 255, 249)';
     borda.style.height= '5px';
 }
 
