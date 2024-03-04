@@ -5,27 +5,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+	<link href="img/logoPagina.ico" rel="icon">
 
 	<title>CliniPet</title>
 </head>
 <body>
+
+	<div id="borda" class="cabecalho-borda"></div>
 		<header class="cabecalho">
-			<div class="cabecalho-logo">
-				<img class="logo-imagem" src="logo.png"><!--icon da pagina-->
-				<h4 class="cabecalho-titulo">CliniPet</h4>
+
+			<div id="texto1" class="cabecalho-logo">
+				<img class="logo-imagem" src="img/logo.png"><!--icon da pagina-->
+				<h4  class="cabecalho-titulo">CliniPet</h4>
 			</div>
 
 			<div class="cabecalho-escrito">
-				<h4 class="cabecalho-texto"><a href="index.html">Inicio</a></h4>
-				<h4 class="cabecalho-texto"><a href="servicos.html">Serviços</a></h4>
-				<h4 class="cabecalho-texto"><a href="contato.html">Contato</a></h4>
+				<div id="texto1ID"><a class="cabecalho-texto" href="index.html">Inicio</a></div>
+				<div id="texto2"><a class="cabecalho-texto" href="servicos.html">Serviços</a></div>
+				<div id="texto3"><a class="cabecalho-texto" href="contato.html">Contato</a></div>
 			</div>
+
 		</header>
 
 		<main class="conteudo">
@@ -37,7 +43,7 @@
 					<button class="conteudo-principal-botao">Agendar Consulta</button>
 				</div>
 				<div class="conteudo-principal-animacao">
-					<img class="conteudo-principal-imagem" src="imagem4.jpg">
+					<img class="conteudo-principal-imagem" src="img/imagem4.jpg">
 				</div>
 			</section>
 
@@ -56,11 +62,11 @@
 								<h2 class="conteudo-retangulo1-escrito-titulo">Atendimento Rapido</h2>
 								<p class="conteudo-retangulo1-escrito-texto">Na Clinipet, priorizamos a agilidade no atendimento para proporcionar comodidade aos nossos clientes e seus pets.</p>
 							</div>
-							<img class="conteudo-retangulo1-imagem" src="relogio.png">
+							<img class="conteudo-retangulo1-imagem" src="img/relogio.png">
 						</div>
 	
 						<div class="conteudo-retangulo2">
-							<img class="conteudo-retangulo1-imagem" src="equipe.png" style="opacity: 90%;">
+							<img class="conteudo-retangulo1-imagem" src="img/equipe.png" style="opacity: 90%;">
 							<div class="conteudo-retangulo2-escrito">
 								<h2 class="conteudo-retangulo2-escrito-titulo">Equipe Profissional</h2>
 								<p class="conteudo-retangulo2-escrito-texto">Nossa equipe é composta por profissionais dedicados e apaixonados por animais, prontos para oferecer cuidados especializados.</p>
@@ -72,14 +78,14 @@
 								<h2 class="conteudo-retangulo1-escrito-titulo">Produtos de Qualidade</h2>
 								<p class="conteudo-retangulo1-escrito-texto">Você encontrará uma seleção cuidadosamente escolhida de produtos de alta qualidade que fazem a diferença no bem-estar do seu animal de estimação.</p>
 							</div>
-							<img class="conteudo-retangulo1-imagem" src="shampoo-pet.png">
+							<img class="conteudo-retangulo1-imagem" src="img/shampoo-pet.png">
 						</div>
 
 						<div class="conteudo-retangulo2">
-							<img class="conteudo-retangulo1-imagem" src="ventilador.png" style="opacity: 90%;">
+							<img class="conteudo-retangulo1-imagem" src="img/ventilador.png" style="opacity: 90%;">
 							<div class="conteudo-retangulo2-escrito">
 								<h2 class="conteudo-retangulo2-escrito-titulo">Ambiente Confortável e Climatizado</h2>
-								<p class="conteudo-retangulo2-escrito-texto">Criamos um ambiente aconchegante e climatizado para garantir que tanto os pets se sintam confortáveis.</p>
+								<p class="conteudo-retangulo2-escrito-texto">Ambiente aconchegante e climatizado para garantir que tanto os pets se sintam confortáveis.</p>
 							</div>
 						</div>
 
@@ -88,7 +94,7 @@
 								<h2 class="conteudo-retangulo1-escrito-titulo">Estacionamento Amplo</h2>
 								<p class="conteudo-retangulo1-escrito-texto">Oferecemos um estacionamento amplo e seguro, proporcionando facilidade no momento de trazer seu amigo peludo para uma consulta</p>
 							</div>
-							<img class="conteudo-retangulo1-imagem" src="carro.png">
+							<img class="conteudo-retangulo1-imagem" src="img/carro.png">
 						</div>
 
 					</div>
@@ -119,41 +125,75 @@
 -->
 
 
-			<div id="carouselExampleCaptions" class="carousel">
-				<div class="carousel-indicators">
-				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
+
+			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img src="carousel1.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-					  <p class="carousel-texto">Construímos relações duradouras, cuidando não apenas da saúde, mas também do bem-estar seus amados peludos.</p>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<img src="imagem2.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-					  <p class="carousel-texto">Renove o brilho e a higiene do seu pet conosco.</p>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<img src="imagem3.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-					  <p class="carousel-texto"> Nossos especialistas em lavagem proporcionam cuidados suaves e resultados incríveis.</p>
-					</div>
-				  </div>
+				<div class="carousel-item active" data-bs-interval="3000">
+					<img class="imagem-carousel d-block " src="img/carousel1.jpg">
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Previous</span>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img class="imagem-carousel d-block" src="img/carousel2.jpg">
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img class="imagem-carousel d-block" src="img/carousel3.jpg">
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img class="imagem-carousel d-block" src="img/carousel4.jpg">
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img class="imagem-carousel d-block" src="img/carousel5.jpg">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Next</span>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
 				</button>
-			  </div>
+			</div>
+			
+			<section class="servicos">
+				<div class="servicos-titulo">
+					<div class="servicos-titulo-hr"></div>
+					<h1 class="servicos-titulo-escrito">Serviços</h1>
+					<div class="servicos-titulo-hr" style="border-top: 0%;"></div>
+				</div>
+				<div class="servicos-grade">
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/24horas.png">
+						<div class="servicos-grade-card-titulo">Emergência 24hr</div>
+						<div class="servicos-grade-card-subtitulo">Atendimento médico veterinário 24h para todo e qualquer tipo de urgência para seu pet.</div>
+					</div>
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/vacina.png">
+						<div class="servicos-grade-card-titulo">Vacinas</div>
+						<div class="servicos-grade-card-subtitulo">Precisa vacinar seu pet? As melhores marcas e com controle de temperatura.</div>
+					</div>
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/internamento.png">
+						<div class="servicos-grade-card-titulo">Internamento</div>
+						<div class="servicos-grade-card-subtitulo">Estrutura completa com toda segurança necessária para o seu pet se sentir em casa!</div>
+					</div>
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/cirurgia.png">
+						<div class="servicos-grade-card-titulo">Cirurgia</div>
+						<div class="servicos-grade-card-subtitulo">Centro Cirúrgico completo, com equipamentos de ponta para todas as cirurgias.</div>
+					</div>
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/banho.png">
+						<div class="servicos-grade-card-titulo">Banho</div>
+						<div class="servicos-grade-card-subtitulo">O banho do seu pet em um verdadeiro spa com relaxamento e cuidado.</div>
+					</div>
+					<div class="servicos-grade-card">
+						<img class="servicos-logo" src="img/tosa.png">
+						<div class="servicos-grade-card-titulo">Tosa</div>
+						<div class="servicos-grade-card-subtitulo">Tosa para pets: transforme o visual do seu companheiro com estilo e cuidado.</div>
+					</div>
+				</div>
+			</section>
+
 
 
 			
@@ -163,7 +203,7 @@
 			<section class="conteudo-servicos">
 				<div class="conteudo-servicos1">
 					<div class="conteudo-servicos-horarios">
-						<img class="conteudo-servicos-imagem1" src="horario.png">
+						<img class="conteudo-servicos-imagem1" src="img/horario.png">
 						<div class="conteudo-servicos-horarios-escrito">
 							<h1 class="conteudo-servicos-titulo">Horários de atendimento:</h1>
 							<p class="conteudo-servicos-texto"><strong>Segunda:</strong> 08:00 as 16:00</p>
@@ -178,7 +218,7 @@
 				</div>
 				<div class="conteudo-servicos2">
 					<div class="conteudo-servicos-telefone">
-						<img class="conteudo-servicos-imagem2" src="telefone.png">
+						<img class="conteudo-servicos-imagem2" src="img/telefone.png">
 						<div class="conteudo-servicos-telefone-escrito">
 							<h1 class="conteudo-servicos-titulo">Telefones para Contato:</h1>
 							<p class="conteudo-servicos-texto"><strong>Fixo:</strong></p>
@@ -189,12 +229,12 @@
 					</div>
 
 					<div class="conteudo-servicos-agendar">
-						<img class="conteudo-servicos-imagem2" src="agenda.png">
+						<img class="conteudo-servicos-imagem2" src="img/agenda.png">
 						<div class="conteudo-servicos-agendar-escrito">
 							<h1 class="conteudo-servicos-titulo">Agendamento de consulta:</h1>
 							<div class="conteudo-servicos-agendar-whatsapp">
 								<h1><a  class="conteudo-servicos-agendar-whatsapp-texto">Ir para o WhatsApp</a></h1>
-								<img class="conteudo-servicos-agendar-whatsap-icon" src="whatsapp.png">
+								<img class="conteudo-servicos-agendar-whatsap-icon" src="img/whatsapp.png">
 							</div>
 
 						</div>
@@ -212,9 +252,10 @@
 		
 
 		<footer class="rodape">
-			<img class="logo-imagem" src="logo.png" style="height: 40px; width: 40px;"><!--icon da pagina-->
+			<img class="logo-imagem" src="img/logo.png" style="height: 40px; width: 40px;"><!--icon da pagina-->
 		</footer>
 
-
+	
 </body>
+	<script type="text/javascript" src="script.js"></script>
 </html>
