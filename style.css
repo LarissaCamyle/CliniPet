@@ -331,9 +331,13 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(7 255 0 / 23%);
+    background-color: rgba(7, 255, 0, 23%);
     height: 300px;
     overflow:auto;
+}
+
+.conteudo-retangulo1:hover {
+    background-color: rgba(61, 248, 55, 0.356);
 }
 
 .conteudo-retangulo1-escrito, .conteudo-retangulo2-escrito {
@@ -361,6 +365,10 @@ a {
 
 .conteudo-retangulo2 {
     background-color: rgb(1, 85, 74);
+}
+
+.conteudo-retangulo2:hover {
+    background-color: rgb(4, 100, 87);
 }
 
 .conteudo-retangulo2-escrito-titulo, .conteudo-retangulo2-escrito-texto {
@@ -651,17 +659,38 @@ a {
 
 /*      AVALIACOES ----------------------------------------------------------*/
 
-.avaliacoes-grade-card-titulo{
+.avaliacoes-grade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.avaliacoes-grade-card{
     width: 300px;
     height: 500px;
-    background-color: #ffffffe3;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px #0000003b;
 
 }
 
 .avaliacoes-estrelas{
-    width: 30%;
-    opacity: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+}
 
+.avaliacoes-estrelas-imagem{
+    height: 100%;
+    opacity: 95%;
+    padding-left: 10px;
+}
+
+.avaliacoes-estrelas-texto{
+    padding-left: 10px;
+    font-size: 15px;
 }
 
 
