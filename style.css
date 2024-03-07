@@ -650,10 +650,16 @@ a {
                     margin-left: 10%;
                 }
             }
-            @media screen and (min-width: 933px) and (max-width: 1500px){
+            @media screen and (min-width: 933px) and (max-width: 1300px){
                 .servicos-grade{
                     width: 70%;
                     margin-left: 15%;
+                }
+            }
+            @media screen and (min-width: 1300px){
+                .servicos-grade{
+                    width: 50%;
+                    margin-left: 25%;
                 }
             }
 
@@ -663,34 +669,56 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .avaliacoes-grade-card{
-    width: 300px;
-    height: 500px;
-    background-color: #ffffff;
+    width: 260px;
+    height: 420px;
+    background-color: #f7f7f7;
     border-radius: 10px;
-    box-shadow: 4px 5px 4px #0000003b;
+    box-shadow: 4px 5px 4px #00000048;
+}
 
+.avaliacoes-grade-card:hover {
+    transform: scale(1.03);
 }
 
 .avaliacoes-estrelas{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 50px;
+    font-size: 15px;
 }
 
 .avaliacoes-estrelas-imagem{
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
     opacity: 95%;
-    padding-left: 10px;
+    margin: 10px;
 }
 
 .avaliacoes-estrelas-texto{
-    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 10px;
+    padding-right: 15px;
     font-size: 15px;
+}
+
+.avaliacoes-grade-card-texto{
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
 }
 
 
