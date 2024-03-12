@@ -98,6 +98,41 @@ a {
             .cabecalho {
                 flex-wrap: nowrap;
                 justify-content: space-around;
+                height: 35px;
+                gap: 0px;
+                padding-left: 10px;
+            }
+            .cabecalho-titulo{
+                font-size: 22px;   
+                font-weight: 600;
+                padding-top: 10px;
+            }
+            .cabecalho-logo{
+                padding-left: 0px;
+            }
+            .logo-imagem{
+                height: 25px; width: 35px;
+                padding-left: 10px;
+            }
+            .cabecalho-texto{
+                font-size: 14px;
+                margin: 0px;
+                padding: 0px;
+                gap: 0px;
+            }
+            .cabecalho-texto, .cabecalho-texto:hover {
+                width: 70px;
+                padding: 15px;
+                font-size: 13px;
+                gap : 10px;
+            }
+        
+        }
+
+        @media screen and (min-width: 500) and (max-width: 500px){
+            .cabecalho {
+                flex-wrap: nowrap;
+                justify-content: space-around;
                 height: 40px;
                 gap: 10px;
                 padding-left: 10px;
@@ -224,9 +259,10 @@ a {
 
 }
         /*  CELULAR***************/
+        
         @media screen and (max-width: 500px){
             .conteudo-principal {
-                width: 90%;
+                width: 80%;
                 margin-left: 3%;
                 margin-top: 0px;
                 justify-content: start;
@@ -671,6 +707,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin-bottom: 65px;
 }
 
 .avaliacoes-grade-card{
@@ -697,7 +734,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65%;
+    width: 48%;
     opacity: 95%;
     margin: 10px;
 }
@@ -709,6 +746,7 @@ a {
     padding-top: 10px;
     padding-right: 15px;
     font-size: 15px;
+    color: rgb(0, 136, 177);
 }
 
 .avaliacoes-grade-card-texto{
@@ -718,9 +756,23 @@ a {
     justify-content: center;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 46, 73);
     font-size: 16px;
 }
 
+
+        @media screen  and (min-width: 840px) and (max-width: 1100px) {
+            .avaliacoes-grade {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+        @media screen  and (min-width: 1100px){
+            .avaliacoes-grade-card{
+                width: 250px;
+                height: 480px;
+            }
+        }
 
 /*  CONTEUDO HORARIOS E INF-----------------------------------------------*/
 
