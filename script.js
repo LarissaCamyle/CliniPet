@@ -1,6 +1,5 @@
 var texto1 = document.getElementById("texto1ID");
 var texto2 = document.getElementById("texto2");
-var texto3 = document.getElementById("texto3");
 var borda = document.getElementById("borda");
 
 
@@ -17,13 +16,6 @@ texto2.addEventListener ("mouseenter", function()
 {
     esconderBorda();
  	console.log("2");
-	aparecerBorda();
-})
-
-texto3.addEventListener ("mouseenter", function()
-{
-    esconderBorda();
- 	console.log("3");
 	aparecerBorda();
 })
 
